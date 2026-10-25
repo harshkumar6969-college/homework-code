@@ -3,8 +3,6 @@
 //Name- Harsh Kumar
 //Roll no - 29552
 #include <stdio.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 int main() {
     int num;
