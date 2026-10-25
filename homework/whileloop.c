@@ -3,15 +3,21 @@
 //Name- Harsh Kumar
 //Roll no - 29552
 #include <stdio.h>
-int main(){
-    int a;
-    int count=0;
-    int i = 0;
-    printf("Enter your number");
-    scanf("%d",&a);
-    while (a != i){
-        i++;
-        count = count + i;
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num;
+    int sum = 0;
+    int remainder;
+    printf("Enter your number: ");
+    scanf("%d", &num);
+    while (num > 0) {
+        remainder = num % 10;  
+        sum = sum + remainder; 
+        num = num / 10;        
     }
-    printf("%d", count);
+
+    printf("%d\n", sum);
+    return 0;
 }
